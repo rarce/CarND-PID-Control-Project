@@ -3,6 +3,16 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Project Write-Up
+
+The params for the PID controller where finded using the implemented tweddle algorithm show in class. After several tries I reach to the parameters set in the code.
+
+### Components of PID
+
+* P: the Kp parameter affect how the controller response direct to cross-track error. A high Kp make the car oscillate. 
+* I: the Ki parameter affect the bias in the CTE. If the cumulative CTE is biased Ki coef must compesate this bias.
+* D: the Kd parameter take in account the change in the CTE for example if the CTE is increasing the response must be a higher steer.
+
 ## Dependencies
 
 * cmake >= 3.5
